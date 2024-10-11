@@ -1,4 +1,3 @@
-<!DOCTYPE html>
 <html lang="pt-BR">
 
 <head>
@@ -7,22 +6,21 @@
     <title>Melodia - Sua Música, Sua Forma</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
-    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> -->
 </head>
 
 <body>
-
-
     <header class="hero py-5">
-        <div class="container d-flex justify-content-between align-items-center">
-            <img src="logo.png" alt="Demonstração do aplicativo" class="logo img-fluid" />
-            <div class="text-right">
+        <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center">
+            <img src="logo.png" alt="Demonstração do aplicativo" class="logo img-fluid mb-3 mb-md-0" />
+            <div class="text-center text-md-right">
                 <h1>Melodia: Sua Música, Sua Forma</h1>
                 <p>Descubra novas músicas e crie playlists personalizadas.</p>
-                <a href="#funcionalidades" class="btn btn-success">Ouvir Agora</a>
+                <a href="#music" class="btn btn-success">Ouvir Agora</a>
             </div>
         </div>
     </header>
+
+
 
 
 
@@ -66,41 +64,79 @@
         </div>
     </section>
 
+    <div id="music" class="container mt-5 py-5">
+        <div id="musicCarousel" class="carousel slide position-relative" data-ride="carousel">
+            <div class="carousel-inner">
+                <h2>O que está em alta: </h2>
+                <div class="carousel-item active">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/1731691710&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div class="carousel-caption d-none d-md-block">
 
-    <section class="depoimentos py-5 bg-light text-center">
-        <h2>O que nossos usuários dizem</h2>
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 mx-auto">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Melodia mudou minha forma de ouvir música!"</p>
-                        <footer class="blockquote-footer">João Silva</footer>
-                    </blockquote>
+                    </div>
                 </div>
-                <div class="col-md-6 mx-auto">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Adoro as playlists personalizadas!"</p>
-                        <footer class="blockquote-footer">Maria Oliveira</footer>
-                    </blockquote>
+
+                <div class="carousel-item">
+                    <iframe width="100%" height="300" scrolling="no" frameborder="no" allow="autoplay"
+                        src="https://w.soundcloud.com/player/?url=https%3A//api.soundcloud.com/tracks/537070044&color=%23ff5500&auto_play=false&hide_related=false&show_comments=true&show_user=true&show_reposts=false&show_teaser=true&visual=true"></iframe>
+                    <div class="carousel-caption d-none d-md-block">
+
+                    </div>
                 </div>
-                <div class="col-md-6 mx-auto">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"A qualidade de som é excelente!"</p>
-                        <footer class="blockquote-footer">Felipe Costa</footer>
-                    </blockquote>
+            </div>
+
+
+            <a class="carousel-control-prev carousel-prev" href="#musicCarousel" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Anterior</span>
+            </a>
+            <a class="carousel-control-next carousel-next" href="#musicCarousel" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Próximo</span>
+            </a>
+        </div>
+    </div>
+
+    <section class=" bg-dark mt-5 depoimentos py-5 bg-light text-center ">
+        <h1 class="text-white">O que nossos usuários dizem</h1>
+        <div class="d-flex justify-content-center">
+            <div class="container row d-flex justify-content-center">
+
+                <div class="card col-sm-5 m-1" style="width: 18rem;">
+                    <img src="img/1.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-text">João Silva</h3>
+                        <p class="card-text">"Melodia mudou minha forma de ouvir música!"</p>
+                    </div>
                 </div>
-                <div class="col-md-6 mx-auto">
-                    <blockquote class="blockquote">
-                        <p class="mb-0">"Navegação muito fácil e intuitiva!"</p>
-                        <footer class="blockquote-footer">Paulo Antunes</footer>
-                    </blockquote>
+                <div class="card col-sm-5 m-1" style="width: 18rem;">
+                    <img src="img/4.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-text">Paulo Antunes</h3>
+                        <p class="card-text">"Navegação muito fácil e intuitiva!"</p>
+                    </div>
                 </div>
+                <div class="card col-sm-5 m-1" style="width: 18rem;">
+                    <img src="img/2.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-text">Felipe Costa</h3>
+                        <p class="card-text">"A qualidade de som é excelente!"</p>
+                    </div>
+                </div>
+                <div class="card col-sm-5 m-1" style="width: 18rem;">
+                    <img src="img/3.svg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h3 class="card-text">Maria Oliveira</h3>
+                        <p class="card-text">"Adoro as playlists personalizadas!"</p>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
 
-    <section id="contato" class="contato py-5 text-center">
+    <section id="contato" class="container mt-5 contato py-5 text-center">
         <h2>Entre em Contato</h2>
         <form>
             <div class="form-group">
@@ -114,9 +150,27 @@
     </section>
 
     <footer class="text-center py-4 bg-dark text-white">
-        <p>&copy; 2024 Melodia. Todos os direitos reservados.</p>
+        <p class="py-3">&copy; 2024 Melodia. Todos os direitos reservados.</p>
+        <div class="social-icons">
+            <a href="https://www.facebook.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-facebook fa-2x"></i>
+            </a>
+            <a href="https://www.twitter.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-twitter fa-2x"></i>
+            </a>
+            <a href="https://www.instagram.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-instagram fa-2x"></i>
+            </a>
+            <a href="https://www.linkedin.com" target="_blank" class="text-white mx-2">
+                <i class="fab fa-linkedin fa-2x"></i>
+            </a>
+        </div>
     </footer>
 
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
 </body>
 
