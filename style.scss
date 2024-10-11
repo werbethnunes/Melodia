@@ -1,0 +1,128 @@
+// styles.scss
+
+$primary-color: #28a745;
+$dark-color: #343a40;
+$light-color: #f8f9fa;
+$text-color: #ffffff;
+$logo-max-height: 80px; 
+$logo-border-radius: 8px; 
+$header-padding: 2rem;
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.header {
+  &.hero {
+    background-color: #fff; 
+    padding: $header-padding;
+
+    .logo {
+        max-height: $logo-max-height; 
+        border-radius: $logo-border-radius; 
+    }
+
+    .text-right {
+        text-align: right; 
+    }
+
+    h1 {
+      font-size: 2.5rem;
+    }
+
+    p {
+      margin: 1rem 0;
+      font-size: 1.25rem;
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: $text-color;
+    }
+
+    img {
+      margin-top: 1.5rem;
+      max-width: 100%;
+      height: auto;
+    }
+  }
+}
+
+.section {
+  &.bg-dark {
+    background-color: $dark-color;
+    color: $text-color;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .container {
+      .row {
+        .col-md-4 {
+          margin-bottom: 2rem;
+
+          i {
+            margin-bottom: 1rem;
+          }
+
+          h3 {
+            margin-top: 0.5rem;
+          }
+        }
+      }
+    }
+  }
+
+  &.depoimentos {
+    h2 {
+        margin-bottom: 2rem; 
+    }
+
+    blockquote {
+        background-color: #ffffff; 
+        border-left: 5px solid #28a745; 
+        padding: 1rem; 
+        border-radius: 8px; 
+        margin-bottom: 2rem;
+
+        footer {
+            font-size: 0.9rem; 
+            color: #6c757d; 
+        }
+    }
+  }
+
+  &.contato {
+    text-align: center;
+
+    h2 {
+      margin-bottom: 2rem;
+    }
+
+    .form-group {
+      margin-bottom: 1rem;
+
+      .form-control {
+        padding: 0.5rem;
+      }
+    }
+
+    .btn {
+      background-color: $primary-color;
+      color: $text-color;
+    }
+  }
+}
+
+footer {
+  text-align: center;
+  padding: 2rem 0;
+  background-color: $dark-color;
+  color: $text-color;
+
+  p {
+    margin: 0;
+  }
+}
